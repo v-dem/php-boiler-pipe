@@ -1,5 +1,5 @@
 {
-  "name": "dotpack/php-boiler-pipe",
+  "name": "v-dem/php-boiler-pipe",
   "description": "PhpBoilerPipe. Boilerplate Removal and Fulltext Extraction from HTML pages",
   "license": "MIT",
   "keywords": [
@@ -22,7 +22,7 @@
   "require": {},
   "autoload": {
     "psr-4": {
-      "DotPack\\PhpBoilerPipe\\": "src"
+      "v-dem\\PhpBoilerPipe\\": "src"
     }
   }
 }

@@ -22,7 +22,7 @@
   "require": {},
   "autoload": {
     "psr-4": {
-      "v-dem\\PhpBoilerPipe\\": "src"
+      "dotpack\\PhpBoilerPipe\\": "src"
     }
   }
 }

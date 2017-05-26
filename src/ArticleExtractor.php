@@ -39,6 +39,8 @@ class ArticleExtractor
         $content = new HtmlContent($html);
         $document = $content->getTextDocument();
 
+        print_r($document);
+
         $this->process($document);
 
         return $document->getContent();

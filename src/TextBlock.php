@@ -15,15 +15,14 @@ class TextBlock
 
     protected $labels = [];
 
-    protected $tag = null;
-
     protected $isContent = false;
     protected $startOffset = 0;
     protected $endOffset = 0;
 
-    public function __construct($level = 0, array $labels = [], $tag = null)
+    public function __construct($level = 0, array $labels = [], $tag = '')
     {
         $this->level = $level;
+        $this->tag = $tag;
         if ($labels) foreach($labels as $label) $this->labels[$label] = true;
     }
 

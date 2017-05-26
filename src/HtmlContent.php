@@ -48,7 +48,7 @@ class HtmlContent
                 } else {
                     if ($this->textBlock) $this->textDocument->addTextBlock($this->textBlock);
                     $labels = isset($this->labels[$tag]) ? $this->labels[$tag] : [];
-                    $this->textBlock = new TextBlock($level, $labels);
+                    $this->textBlock = new TextBlock($level, $labels, $tag);
                 }
             } else if ($element->nodeType == XML_TEXT_NODE) {
                 $this->textBlock->addText($element->data, $isAnchor);

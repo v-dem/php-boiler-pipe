@@ -15,11 +15,13 @@ class TextBlock
 
     protected $labels = [];
 
+    protected $tag = null;
+
     protected $isContent = false;
     protected $startOffset = 0;
     protected $endOffset = 0;
 
-    public function __construct($level = 0, array $labels = [])
+    public function __construct($level = 0, array $labels = [], $tag = null)
     {
         $this->level = $level;
         if ($labels) foreach($labels as $label) $this->labels[$label] = true;
@@ -87,6 +89,14 @@ class TextBlock
     public function getLabels()
     {
         return $this->labels;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTag()
+    {
+        return $this->tag;
     }
 
     protected function calcWordCount($text)
